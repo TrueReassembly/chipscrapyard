@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Assembly's Scrapyard</title>
+        <title>Assembly&apos;s Scrapyard</title>
         <meta content="Assembly&apos;s Scrapyard" property="og:title" />
         <meta content="The useless things I&apos;ve made to learn Next.js" property="og:description" />
         <meta content="https://scrapyard.reassembly.dev" property="og:url" />
