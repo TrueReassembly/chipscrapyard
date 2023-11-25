@@ -24,11 +24,11 @@ export default function Home() {
     <>
       <Head>
         <title>Assembly's Scrapyard</title>
-        <meta content="Assembly's Scrapyard" property="og:title" />
-        <meta content="Site Description" property="og:description" />
+        <meta content="Assembly&apos;s Scrapyard" property="og:title" />
+        <meta content="The useless things I&apos;ve made to learn Next.js" property="og:description" />
         <meta content="https://scrapyard.reassembly.dev" property="og:url" />
         <meta content="https://pbs.twimg.com/profile_images/1726294196573642752/Gb-VwBsQ_400x400.jpg" property="og:image" />
-        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <meta content="#55199E" data-react-helmet="true" name="theme-color" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-between p-24 h-screen">
         <div className="justify-center">
