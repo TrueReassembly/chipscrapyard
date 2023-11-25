@@ -2,31 +2,30 @@
 import './globals.css'
 
 export default function Home() {
-
-  function useFooterButton(destination: String) {
-    switch (destination) {
-      case 'Github': window.location.href = 'https://github.com/TrueReassembly'
-      case 'Main Twitter': window.location.href = 'https://twitter.com/ChipDaFurry'
-      case 'RWBY Twitter': window.location.href = 'https://twitter.com/AssemblyRose'
-      default: return
-    }
+  const destinations = {
+    "Github": "https://github.com/TrueReassembly",
+    "Main Twitter": "https://twitter.com/ChipDaFurry",
+    "RWBY Twitter": "https://twitter.com/AssemblyRose"
   }
-  
-  const footerButtons = ['Github', 'Main Twitter', 'RWBY Twitter']
+
+  const redirect = (destination: string) => {
+    window.open(destination)
+  }
   // border-l text-1xl border-r p-2
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 h-screen">
       <div className="justify-center">
-        <h1 className="text-6xl font-bold text-center mb-1">Assembly's Scrapyard</h1>
-        <p className="text-2xl text-center mb-1">The useless things I've made to learn Next.js</p>
-        <p className="text-1xl text-center">Even though I'm using TypeScript</p>
+        {/* &apos; is an apostrophe, whoever decided that is an idiot */}
+        <h1 className="text-6xl font-bold text-center mb-1">Assembly&apos;s Scrapyard</h1>
+        <p className="text-2xl text-center mb-1">The useless things I&apos;ve made to learn Next.js</p>
+        <p className="text-1xl text-center">Even though I&apos;m using TypeScript</p>
       </div>
 
       <footer className="flex flex-col items-center justify-center mt-auto">
         <div className="grid grid-rows-1 grid-flow-col">
-            {footerButtons.map((button, index) => (
-              <button key={index} className="border-l text-1xl border-r p-2" onClick={() => useFooterButton(button)}>{button}</button>
+            {Object.keys(destinations).map((button, i) => (
+              <button key={i} className="border-l text-1xl border-r p-2" onClick={() => redirect(button)}>{button}</button>
             ))}
         </div>
 
