@@ -9,14 +9,18 @@ export default function Home() {
     description: "The stuff I've made to learn Next.js"
   }
 
-  const destinations = {
+  const destinations: Destination = {
     "Github": "https://github.com/TrueReassembly",
     "Main Twitter": "https://twitter.com/ChipDaFurry",
     "RWBY Twitter": "https://twitter.com/AssemblyRose"
   }
 
+  interface Destination {
+    [key: string]: string
+  }
+
   const redirect = (destination: string) => {
-    window.location.href = destination
+    window.location.href = destinations[destination];
   }
   // border-l text-1xl border-r p-2
 
