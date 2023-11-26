@@ -6,7 +6,7 @@ export default function ClickTheButton() {
   const [clicks, setClicks] = useState(0);
   const meta = {
     title: "Click the Button",
-    description: "Click the button. That&apos;s it."
+    description: "Click the button. That's it."
   }
 
   function click() {
@@ -33,8 +33,8 @@ export default function ClickTheButton() {
         <button className="absolute top-0 left-0 m-5 scale-150" onClick={() => window.history.back()}>← Back</button>
         <main className="flex min-h-screen flex-col items-center justify-between p-24 h-screen">
             <p className="text-6xl font-bold text-center mb-1">Click the Button</p>
-            <p className="text-2xl text-center mb-1">That's it.</p>
-            <p className="text-1xl text-center mb-6">There's nothing else to this page.</p>
+            <p className="text-2xl text-center mb-1">That&apos;s it.</p>
+            <p className="text-1xl text-center mb-6">There&apos;s nothing else to this page.</p>
             <p className="text-4xl w-screen text-center flex justify-center mt-5">You have clicked the button {clicks} times</p>
             <div className="flex justify-center items-center h-screen flex-col">
               <button className="border bg-slate-800 p-5 text-2xl rounded-xl w-30 min-w-min" onClick={click}>Click me!</button>
