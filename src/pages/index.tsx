@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   const redirect = (destination: string) => {
-    window.open(destination)
+    window.location.href = destination
   }
   // border-l text-1xl border-r p-2
 
