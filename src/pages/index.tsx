@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
       <div className="grid justify-center items-center h-screen grid-flow-row">
-        <a href="./project" className="border-2 bg-transparent p-5 text-2xl rounded-xl min-h-fit border-white min-w-min transform transition-transform duration-500 hover:scale-110">My Projects</a>
+        <a href="./projects" className="border-2 bg-transparent p-5 text-2xl rounded-xl min-h-fit border-white min-w-min transform transition-transform duration-500 hover:scale-110">My Projects</a>
       </div>
 
         <footer className="flex flex-col items-center justify-center mt-auto">
