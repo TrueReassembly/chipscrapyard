@@ -1,5 +1,4 @@
 'use client'
-import Head from 'next/head'
 import '../app/globals.css'
 
 export default function Home() {
