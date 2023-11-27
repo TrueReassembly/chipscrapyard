@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "../app/globals.css"
+import Head from "next/head";
 
 export default function ClickTheButton() {
 
@@ -30,6 +31,14 @@ export default function ClickTheButton() {
 
   return( 
     <>
+        <Head>
+          <title>Assembly&apos;s Scrapyard</title>
+          <meta content="Assembly&apos;s Scrapyard" property="og:title" />
+          <meta content="The useless things I&apos;ve made to learn Next.js" property="og:description" />
+          <meta content="https://scrapyard.reassembly.dev" property="og:url" />
+          <meta content="https://pbs.twimg.com/profile_images/1726294196573642752/Gb-VwBsQ_400x400.jpg" property="og:image" />
+          <meta content="#55199E" data-react-helmet="true" name="theme-color" />
+        </Head>
         <button className="absolute top-0 left-0 m-5 scale-150" onClick={() => window.history.back()}>← Back</button>
         <main className="flex min-h-screen flex-col items-center justify-between p-24 h-screen">
             <p className="text-6xl font-bold text-center mb-1">Click the Button</p>
