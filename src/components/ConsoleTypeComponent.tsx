@@ -17,9 +17,11 @@ const ConsoleTypeComponent = () => {
                 
                 // The following div only exists to not break the code, react requiring this is one of the many dumb development decisions that have been made, the first being to use javascript and typescript as the languages to base it on. #RustGang
                 // For the record, this div now has a purpose of providing a margin for the rest of the content, so it's not entirely useless. However, my previous statement still stands. #RustGang
+                // The second issue is that I can only write comments here
+                // Notice the following code: <p>Assembly&apos;s Scrapyard</p>. This is a workaround for the fact that I can't use the apostrophe character in the JSX code. If only typescript's "wonderful" dynamic typing system could use common sense to establish that the apostrophe is not a special character in this context.
                 <div className="m-3">
                     <div className="text-center align-middle">
-                        <p>Assembly's Scrapyard</p>
+                        <p>Assembly&apos;s Scrapyard</p>
                         <p>https://scrapyard.reassembly.dev</p>
                         <p>The rest is coming soon I promise</p>
                     </div>
